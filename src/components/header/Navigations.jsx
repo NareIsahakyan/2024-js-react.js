@@ -5,7 +5,7 @@ const Navigations=(props)=>{
         <div className="navigations">
         <div className="navigationsCount">{props.count}</div>
         <div className="bell">
-            <img src={bell} width="29" height="30" />
+            <img src={bell} width="29" height="30" alt="Bell"/>
         </div>
     </div>
     )

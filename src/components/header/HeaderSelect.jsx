@@ -19,13 +19,13 @@ const lng = useContext(LangContext);
             
           <div className="selectBar">
             <h1>{t("name,lng")}</h1>
-              <div value="User"   onClick={ buttonClicked}><img src={user} width="14px" height="14px" /><span>Мой профиль</span></div>
+              <div value="User"   onClick={ buttonClicked}><img src={user} width="14px" height="14px" alt="User: "/><span>Мой профиль</span></div>
               <hr></hr>
-              <div value="CreditCard"  onClick={ buttonClicked}><img src={creditCard} width="14px" height="14px" /><span>Пополнить баланс</span></div>
+              <div value="CreditCard"  onClick={ buttonClicked}><img src={creditCard} width="14px" height="14px" alt= "Credit Card: " /><span>Пополнить баланс</span></div>
               <hr></hr>
-              <div value="Help" onClick={ buttonClicked}><img src={help} width="14px" height="14px" /><span>FAQ</span></div>
+              <div value="Help" onClick={ buttonClicked}><img src={help} width="14px" height="14px" alt="Help: "/><span>FAQ</span></div>
               <hr></hr>
-              <div value="LogOut"  onClick={ buttonClicked}><img src={logOut} width="14px" height="14px" /><span>Выйти</span></div>
+              <div value="LogOut"  onClick={ buttonClicked}><img src={logOut} width="14px" height="14px" alt="LogOut: "/><span>Выйти</span></div>
           </div>
     )
 }
