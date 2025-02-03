@@ -2,11 +2,11 @@
 import './App.css';
 import Header from './components/header/Header';
 import './components/header/header.css';
-import Footers from './components/Footer';
-import './components/footer.css';
-import Notes from './components/Notes';
-import './components/notes.css';
-import DoctorPage from './components/DoctorPage';
+import Footers from './components/footer/Footer';
+import './components/footer/footer.css';
+import Notes from './components/notes/Notes';
+import './components/notes/notes.css';
+import DoctorPage from './components/doctorPage/DoctorPage';
 
 function App() {
   return (<>
