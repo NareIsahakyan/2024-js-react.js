@@ -14,6 +14,7 @@ const Avatar = () => {
     };
 
     const handleClick = () => {
+        enableButton;
        return myElement;
     };
     
@@ -22,7 +23,7 @@ const Avatar = () => {
             <div className="avatar">{avatar}</div>
             <div className="acountName">{accountName}</div>
             <div className="vectorToUnder">
-               <button value="conteiner" onClick={enableButton }><img src={vector} width="11px" height="6px" /></button> 
+               <button value="conteiner" onClick={handleClick}><img src={vector} width="11px" height="6px" /></button> 
             </div>
         </>
     )
