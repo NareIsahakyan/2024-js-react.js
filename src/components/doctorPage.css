@@ -1,0 +1,132 @@
+/* .doctorPage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row; 
+    text-align: start;
+    align-items: start;
+    align-items: start;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgba(86, 204, 242, 1);
+    padding-left: 380px;
+} 
+
+.doctorlist{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5px;
+    height: 316px;
+    background-color: rgba(86, 204, 242, 1);
+   
+}
+.navbartext{
+    font-family: "Montserrat";
+    font-size: 12px;
+    line-height: 14.63px;
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 1);
+}
+.aboutDoctor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;  
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    gap:15px;
+}
+
+.about h1{
+    font-family: "Montserrat";
+    font-size: 24px;
+    line-height: 29.26px;
+    color: rgba(255, 255, 255, 1); 
+}
+.about p{
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    color: rgba(255, 255, 255, 1); 
+}
+.about h3{
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    color: rgba(255, 255, 255, 1); 
+}
+
+.doctorAvatar{
+    width: 144.71px;
+    height: 144.71px;
+    border-radius: 50%; 
+}
+.dram{
+    width: 11.82px;
+    height: 13px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap:28px ;
+}
+.service p{
+color: rgba(255, 255, 255, 1);
+font-size: 18px;
+font-family: "Montserrat";
+}
+.value{
+    display: flex;
+    flex-direction: row;
+}
+.vector{
+    width: 6px;
+    height: 10px;
+    margin: 5px;
+}
+
+
+
+.auasyle{
+    color: rgba(86, 204, 242, 1);
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    margin-left: 30px;
+}
+.iconslist{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    margin-top: 30px;
+}
+.main{
+    margin-left: 380px;
+}
+.main p{
+    text-align: start;
+    color: rgba(79, 79, 79, 1);
+    font-family: "Montserrat";
+    font-size: 14px;
+} */

@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    flex-direction:column;
+    height: 109px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.header1 {
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    background-color: #FFFFFF;
+    padding-bottom: 1%;
+    box-shadow:0px 15px 15px hsl(0, 1%, 74%);
+
+}
+.aloDocimg{
+    width: 171px;
+    height: 45px;
+    margin-top:3px;
+    margin-left:380px;
+}
+.vector{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    height: 29px;
+    margin-left: 1500px;
+    margin-top: 5px;
+    gap: 15px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 390px;
+    height: 15px;
+    position: absolute;
+    top:52px;
+   left: 844px;
+    gap:39.5px;
+}
+.navigation1{
+    font-family:"Montserrat";
+    font-size: 12px;
+    height: 14.63px;
+    text-align: center;
+    color: #A0A0A0;
+}
+.navigations{
+    display: block;
+}
+.navigationsCount{
+    width: 18.28px;
+    height: 18.28px;
+    background-color:#FF9F28 ;
+    color: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 36px;
+    left:1266px;
+}
+.bell{
+    position: absolute;
+    top:45px;
+    left:1272px;
+}
+.avatar{
+    font:"Montserrat";
+    font-size: 24px;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 40px;
+    left: 1333px;
+    color: #FFFFFF;
+    background-color:#FF9F28 ;
+    border-radius: 50%;
+    text-align: center;
+}
+.acountName{
+    width: 125px;
+    height: 17px;
+    font:"Montserrat";
+    font-size: 14px;
+    position: absolute;
+    top:48px;
+    left: 1380px;
+    color: #787878;
+    font-style: bold;
+}
+.vectorToUnder{
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    top: 45px;
+    left: 1515px;
+    color:#787878 ;
+
+}
+.vectorToUnder button{
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+.selectBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    gap: 2px;
+    text-align: start;
+    width: 219px;
+    height: 154px;
+    border-radius: 5px;
+    margin:5px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(120, 120, 120, 1);
+    box-shadow: 0px 20px  15px rgba(0, 0, 0, 0.1) ;
+}
+
+.selectBar hr{
+    color:rgba(201, 201, 201, 1);
+    width: 219px;
+}
+
+.selectBar div{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 20px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    gap: 5px;
+    padding-left: 21px;
+    color: rgba(120, 120, 120, 1);
+}

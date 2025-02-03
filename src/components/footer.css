@@ -1,0 +1,128 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 434px;
+    position: absolute;
+    top:2280px;
+    background-color: #4F4F4F;
+}
+.footer1part{
+display: flex;
+flex-direction: column;
+}
+.logo{
+    width: 203px;
+    height: 53px;
+    position: absolute;
+    top: 64px;
+    left: 380px;
+}
+.aboutSite{
+  width: 364px;
+  height: 90px;
+  text-align: start;  
+  position: absolute;
+  top: 145px;
+  left: 380px;
+  color:#AFAFAF ;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 14.63px;
+}
+.sites{
+    display: flex;
+    flex-direction: row;
+}
+.instagram{
+    position: absolute;
+    top: 263px;
+    left: 380px;
+}
+.fasebook{
+    position: absolute;
+    top: 263px;
+    left: 428px;
+}
+.youtube{
+    position: absolute;
+    top: 263px;
+    left: 476px;
+}
+.appBadge{
+    display: flex;
+    flex-direction: row;
+}
+.appStore{
+    position: absolute;
+    top: 324px;
+    left: 380px;
+}
+.googlePlay{
+    position: absolute;
+    top: 324px;
+    left: 523px;
+}
+
+.footer2part{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 71px;
+    left: 773px;
+    gap:37px;
+    color: #FFFFFF;
+    text-align: start;
+}
+.user .faq .forDoc .forServise .contact .usersOK{
+   height: 17px; 
+   font-family: "Montserrat";
+   font-size: 14px;
+   line-height: 17.07px;
+   color: #FFFFFF;
+}
+
+
+
+.footer3part{
+    display: flex;
+    flex-direction: column;
+}
+.contactText{
+    font-family: "Montserrat";
+   font-size: 12px;
+   line-height: 14.63px;
+   color: #FFFFFF;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+   position: absolute; 
+   top: 75px;
+   left:1070px ;
+   gap:22px
+}
+.plase{
+    display: flex;
+    flex-direction: row;
+   position: absolute; 
+   top: 121px;
+   left:1070px ;
+   gap:22px
+}
+.clock{
+    display: flex;
+    flex-direction: row;
+   position: absolute; 
+   top: 173px;
+   left:1070px ;
+   gap:22px
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+   position: absolute; 
+   top: 221px;
+   left:1070px ;
+   gap:22px
+}
