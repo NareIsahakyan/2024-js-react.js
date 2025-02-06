@@ -1,10 +1,10 @@
-import en from "../../local/en.json";
-import ru from "../../local/ru.json";
+import en from "../local/en.json";
+import ru from "../local/ru.json";
 
-export const t = (key,lng)=>{
+export const translate = (key,lang)=>{
 let lang = en;
-if(lng === "ru"){
+if(lang === "ru"){
     lang = ru;
 }
-return lang[key]
+return lang[key];
 }
