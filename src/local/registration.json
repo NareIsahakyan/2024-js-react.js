@@ -1,0 +1,110 @@
+[
+    {
+        "registrId": "1",
+        "calendar": "03 Марта 2021",
+        "clock": "16:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "2",
+        "calendar": "13 Марта 2021",
+        "clock": "16:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "3",
+        "calendar": "04 Марта 2021",
+        "clock": "15:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "4",
+        "calendar": "23 Марта 2021",
+        "clock": "13:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "5",
+        "calendar": "03 Марта 2021",
+        "clock": "12:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "6",
+        "calendar": "03 Марта 2021",
+        "clock": "14:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "7",
+        "calendar": "03 Марта 2021",
+        "clock": "17:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "8",
+        "calendar": "04 Марта 2021",
+        "clock": "16:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "9",
+        "calendar": "04 Марта 2021",
+        "clock": "12:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "10",
+        "calendar": "04 Марта 2021",
+        "clock": "15:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "11",
+        "calendar": "04 Марта 2021",
+        "clock": "16:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    },
+    {
+        "registrId": "12",
+        "calendar": "04 Марта 2021",
+        "clock": "17:00",
+        "doctorAvatar": "{doctorAvatar}",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет"
+    }
+]

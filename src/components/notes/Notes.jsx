@@ -6,13 +6,10 @@ import objectProfile from "../../images/OBJECTS.png";
 import underline1 from "../../images/Rectangle 23.png";
 import underline2 from "../../images/Rectangle 24.png";
 import underline3 from "../../images/Rectangle 25.png";
-import doctorAvatar from "../../images/doctor.png";
-import calendar from "../../images/calendar.png";
-import clocks from "../../images/clock-1.png";
-import videCamera from "../../images/video-camera.png";
+import Registration from "./Registration";
 
 const Notes = () => {
-
+   
     return (
         <div className="notes">
 
@@ -55,13 +52,8 @@ const Notes = () => {
             </div>
             <div><input type="button" value="мои записи" id="myNotes"></input></div>
 
-            <div className="buttonslist">
-                <input type="button" value="Предстоящие" id="myNotes1"></input>
-                <input type="button" value="Прошедшие" id="myNotes2"></input>
-                <input type="button" value="Отмененные" id="myNotes3"></input>
-            </div>
-
-            <div className="nodesList">
+            <Registration />
+            {/* <div className="nodesList">
 
                 <div className="nodeList1">
                     <div className="notesDataToRezerv">
@@ -142,7 +134,7 @@ const Notes = () => {
                 </div>
 
 
-            </div>
+            </div> */}
         </div>
     )
 }
