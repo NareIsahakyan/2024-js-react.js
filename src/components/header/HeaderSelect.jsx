@@ -5,7 +5,7 @@ import help from "../../images/help.png";
 import logOut from "../../images/logout.png";
 import { useContext } from "react";
 import { LangContext } from "../../contexts/langContext";
-import {t} from "../utils/translate";
+
 
 
 const HeaderSelect =()=>{
@@ -18,7 +18,7 @@ const lng = useContext(LangContext);
         return (
             
           <div className="selectBar">
-            <h1>{t("name,lng")}</h1>
+    
               <div value="User"   onClick={ buttonClicked}><img src={user} width="14px" height="14px" /><span>Мой профиль</span></div>
               <hr></hr>
               <div value="CreditCard"  onClick={ buttonClicked}><img src={creditCard} width="14px" height="14px" /><span>Пополнить баланс</span></div>

@@ -1,15 +1,15 @@
-import profole1 from "../images/depositphotos_428807632 2.png";
-import profole2 from "../images/Mask Group.png";
-import profole3 from "../images/Rectangle 142.png";
-import profole4 from "../images/Rectangle 143.png";
-import objectProfile from "../images/OBJECTS.png";
-import underline1 from "../images/Rectangle 23.png";
-import underline2 from "../images/Rectangle 24.png";
-import underline3 from "../images/Rectangle 25.png";
-import doctorAvatar from "../images/doctor.png";
-import calendar from "../images/calendar.png";
-import clocks from "../images/clock-1.png";
-import videCamera from "../images/video-camera.png";
+import profole1 from "../../images/depositphotos_428807632 2.png";
+import profole2 from "../../images/Mask Group.png";
+import profole3 from "../../images/Rectangle 142.png";
+import profole4 from "../../images/Rectangle 143.png";
+import objectProfile from "../../images/OBJECTS.png";
+import underline1 from "../../images/Rectangle 23.png";
+import underline2 from "../../images/Rectangle 24.png";
+import underline3 from "../../images/Rectangle 25.png";
+import doctorAvatar from "../../images/doctor.png";
+import calendar from "../../images/calendar.png";
+import clocks from "../../images/clock-1.png";
+import videCamera from "../../images/video-camera.png";
 
 const Notes = () => {
 

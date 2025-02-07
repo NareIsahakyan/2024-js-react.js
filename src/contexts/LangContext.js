@@ -1,6 +1,6 @@
 import { Children, createContext } from "react";
 
-export const LangContext = createContext(0);
+export const LangContext = createContext();
 
 const langProvider = ({children , value}) => {
 
