@@ -3,14 +3,14 @@ import user from "../../images/user.png";
 import creditCard from "../../images/credit-card.png";
 import help from "../../images/help.png";
 import logOut from "../../images/logout.png";
-import { useContext } from "react";
-import { LangContext } from "../../contexts/langContext";
-import {translate} from "../utils/translate";
+// import { useContext } from "react";
+// import { LangContext } from "../../contexts/langContext";
+// import {translate} from "../utils/translate";
 
 
 const HeaderSelect =()=>{
-        const [isButtonClicked, setMyChoise] = useState(false);
-const lng = useContext(LangContext);
+         const [isButtonClicked, setMyChoise] = useState(false);
+// const lng = useContext(LangContext);
         const buttonClicked = () => {
             setMyChoise(true);
         };

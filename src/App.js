@@ -6,7 +6,7 @@ import Footers from './components/footer/Footer';
 import './components/footer/footer.css';
 import Notes from './components/notes/Notes';
 import './components/notes/notes.css';
-import { LangContext } from './contexts/langContext';
+import { LangContext } from './contexts/LangContext';
 import DoctorPage from './components/doctorPage/DoctorPage';
 import { useContext } from 'react';
 

@@ -1,5 +1,5 @@
 import { useState,useContext } from "react";
-import { translate } from "../../utils/translate";
+//import { translate } from "../../utils/translate";
 
 const Ru_ro_vectors = () => {
     const [isButtonDisabled, setButtonDisabled] = useState(false);
@@ -7,12 +7,12 @@ const Ru_ro_vectors = () => {
 
     const disableButton = () => {
         setButtonDisabled(true);
-        translate();
+      
     };
 
     const enableButton = () => {
         setButtonDisabled(false);
-        translate;
+      
     };
 
 

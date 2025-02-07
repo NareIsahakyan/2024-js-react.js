@@ -1,13 +1,13 @@
-import aloDocLogo from "../images/alo-doc-f.png";
-import fasebookLogo from "../images/facebook.png";
-import instagramLogo from "../images/instagram.png";
-import youtubeLogo from "../images/youtube.png";
-import appStore from "../images/app-store- white.png";
-import googlePlay from "../images/google-play- white.png";
-import email from "../images/email.png";
-import place from "../images/place.png";
-import clock from "../images/clock.png";
-import phone from "../images/phone-call.png";
+import aloDocLogo from "../../images/alo-doc-f.png";
+import fasebookLogo from "../../images/facebook.png";
+import instagramLogo from "../../images/instagram.png";
+import youtubeLogo from "../../images/youtube.png";
+import appStore from "../../images/app-store- white.png";
+import googlePlay from "../../images/google-play- white.png";
+import email from "../../images/email.png";
+import place from "../../images/place.png";
+import clock from "../../images/clock.png";
+import phone from "../../images/phone-call.png";
 
 
 const Footer = () => {

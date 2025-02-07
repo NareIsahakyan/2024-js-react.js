@@ -1,10 +1,10 @@
-import vector from "../images/Vector1.png";
-import doctorAvatar from "../images/doctor.png";
-import dram from "../images/dram.png";
-import calendar from "../images/Group.png";
-import hat from "../images/hat.png";
-import plus from "../images/plus.png";
-import znak from "../images/znak.png";
+import vector from "../../images/Vector1.png";
+import doctorAvatar from "../../images/doctor.png";
+import dram from "../../images/dram.png";
+import calendar from "../../images/Group.png";
+import hat from "../../images/hat.png";
+import plus from "../../images/plus.png";
+import znak from "../../images/znak.png";
 
 const DoctorPage = () => {
 
