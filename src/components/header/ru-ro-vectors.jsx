@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { startTransition, useState } from "react";
 
 const Ru_ro_vectors = () => {
     const [isButtonDisabled, setButtonDisabled] = useState(false);
@@ -41,7 +41,7 @@ const styles = {
         fontSize: "14px",
         width: "28px",
         height: "17px",
-        borderBottomLeftRadius: "40%",
+        
         borderBottomRightRadius: "40%",
         color: "#FFFFFF",
         backgroundColor: "rgb(86, 204, 242)",
