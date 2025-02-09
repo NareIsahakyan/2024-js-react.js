@@ -65,6 +65,7 @@ const Footer = () => {
 <div><span className="contactText">8 800 555 35 35</span></div> 
 </div>
 </div>
+
  </div>
     )
 }

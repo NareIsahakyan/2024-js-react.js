@@ -1,29 +1,30 @@
-/* .doctorPage{
+.doctorPage{
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 1350px;
     background-color: #FFFFFF;
+    margin-top: 5px;
 }
 
-.navbar{
+.doctorPageNavbar{
     display: flex;
     flex-direction: row; 
+    
     text-align: start;
-    align-items: start;
-    align-items: start;
-    justify-content: space-between;
     height: 50px;
     background-color: rgba(86, 204, 242, 1);
-    padding-left: 380px;
+    padding-left:380px;
+    padding-top: 20px;
+    gap: 5px;
 } 
 
-.doctorlist{
-    width: 100%;
+.doctorPagelist{
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 5px;
-    height: 316px;
+    height: 320px;
     background-color: rgba(86, 204, 242, 1);
    
 }
@@ -34,15 +35,16 @@
     margin-right: 10px;
     color: rgba(255, 255, 255, 1);
 }
-.aboutDoctor{
+.aboutDoctorPage{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
-    gap: 15px;  
+    gap: 15px; 
+    padding-top: 30px; 
 }
 
-.about{
+.abouts{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,19 +56,19 @@
     gap:15px;
 }
 
-.about h1{
+.abouts h1{
     font-family: "Montserrat";
     font-size: 24px;
     line-height: 29.26px;
     color: rgba(255, 255, 255, 1); 
 }
-.about p{
+.abouts p{
     font-family: "Montserrat";
     font-size: 18px;
     line-height: 21.94px;
     color: rgba(255, 255, 255, 1); 
 }
-.about h3{
+.abouts h3{
     font-family: "Montserrat";
     font-size: 18px;
     line-height: 21.94px;
@@ -84,23 +86,24 @@
     border-radius: 50%;
     margin: 10px;
 }
-.service{
+.docPageService{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap:28px ;
+    gap:5px ;
 }
-.service p{
+.docPageService p{
 color: rgba(255, 255, 255, 1);
 font-size: 18px;
 font-family: "Montserrat";
 }
-.value{
+.docPagevalue{
     display: flex;
     flex-direction: row;
+
 }
-.vector{
+.docVector{
     width: 6px;
     height: 10px;
     margin: 5px;
@@ -123,10 +126,11 @@ font-family: "Montserrat";
 }
 .main{
     margin-left: 380px;
+   margin-top: 50px;
 }
 .main p{
     text-align: start;
     color: rgba(79, 79, 79, 1);
     font-family: "Montserrat";
-    font-size: 14px;
-} */
+    font-size: 16px;
+}

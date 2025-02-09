@@ -1,23 +1,26 @@
 import doctorAvatar from "../../images/doctor.png";
-import calendar from "../../images/calendar.png";
-import clocks from "../../images/clock-1.png";
+import calendars from "../../images/calendar.png";
+import clocks from "../../images/clk.png";
 import videCamera from "../../images/video-camera.png";
+import { Link } from "react-router-dom";
+import { useSearchParams } from 'react-router-dom';
 
-const RegistrationList =(registration)=>{
-    const registrId = registration.registrId,
-    calendar = registration.calendar,
-    clock=registration.clock,
-    doctorAvatar=registration.doctorAvatar,
+const RegistrationList =(registration,key)=>{
+    
+    const  clockDate=registration.clock,
+    doctorAvatarSrs=registration.doctorAvatar,
+    calendarDate = registration.calendar,
     fulName= registration.fulName,
     specialization=registration.specialization,
     experience = registration.experience;
 
     return(
-        <div className="nodeList2" key = {registrId}>
+        <Link to ='/doctorPage/:userId'>
+        <div className="inNodeList" >
                     <div className="notesDataToRezerv">
-                        <div className="notesData">
-                            <div><img src={calendar} width="16px" height="16px" className="calendar" />{calendar}</div>
-                            <div><img src={clocks} width="16px" height="16px" className="clock" />{clock} </div>
+                        <div className="notesData" key={key}>
+                            <div><img src={calendars} width="16px" height="16px" className="calendar" />{calendarDate}</div>
+                            <div><img src={clocks} width="16px" height="16px" className="calendar" />{clockDate}</div>
                             <div><img src={videCamera} width="16px" height="16px" className="videCamera" /> Видео связь </div>
                         </div>
                         <div><input type="button" value="Запланировано" id="myNotesrezerv"></input></div>
@@ -25,7 +28,7 @@ const RegistrationList =(registration)=>{
 
                     <div className="doctorlist">
                         <div className="aboutDoctor">
-                            <div><img src={doctorAvatar} width="144.71px" height="144.71px" className="doctorAvatar" alt= {doctorAvatar} /></div>
+                            <div><img src={doctorAvatarSrs ?doctorAvatarSrs:doctorAvatar} width="144.71px" height="144.71px" className="doctorAvatar" alt= "doctorAvatar" /></div>
                             <div className="docabout">
                                 <div><h1>{fulName}</h1></div>
                                 <div><p>{specialization}</p></div>
@@ -40,6 +43,7 @@ const RegistrationList =(registration)=>{
                         </div>
                     </div>
                 </div>
+                </Link>
     )
 }
 export default RegistrationList;

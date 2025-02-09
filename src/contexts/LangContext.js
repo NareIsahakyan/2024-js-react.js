@@ -1,8 +1,8 @@
-import { Children, createContext } from "react";
+import { children, createContext } from "react";
 
 export const LangContext = createContext();
 
-const langProvider = ({children , value}) => {
+const LangProvider = ({children , value}) => {
 
     return(
         <LangContext.Provider value = {value}>
@@ -11,4 +11,4 @@ const langProvider = ({children , value}) => {
     )
 
 }
-export default langProvider;
+export default LangProvider;

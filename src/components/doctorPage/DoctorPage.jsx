@@ -5,24 +5,25 @@ import calendar from "../../images/Group.png";
 import hat from "../../images/hat.png";
 import plus from "../../images/plus.png";
 import znak from "../../images/znak.png";
+import { useParams, useSearchParams } from "react-router-dom";
 
 const DoctorPage = () => {
 
   return (
     <div className="doctorPage">
 
-      <div className="navbar">
+      <div className="doctorPageNavbar">
         <div><span className="navbartext">Врачи</span></div>
-        <div><img src={vector} width="6px" height="10px" className="vector" /> </div>
+        <div><img src={vector} width="6px" height="10px" className="docVector" /> </div>
         <div><span className="navbartext">Педиатр</span></div>
-        <div><img src={vector} width="6px" height="10px" className="vector" /> </div>
+        <div><img src={vector} width="6px" height="10px" className="docVector" /> </div>
         <div><span className="navbartext">Профиль врача</span></div>
       </div>
 
-      <div className="doctorlist">
-        <div className="aboutDoctor">
+      <div className="doctorPagelist">
+        <div className="aboutDoctorPage">
           <div><img src={doctorAvatar} width="100px" height="100px" className="doctorAvatar"/></div>
-          <div className="about">
+          <div className="abouts">
             <div><h1>Ольга Никитина</h1></div>
             <div><p>Оториноларинголог (ЛОР), Терапевт</p></div>
             <div><h3>Стаж 15 лет</h3></div>
@@ -30,8 +31,8 @@ const DoctorPage = () => {
 
         </div>
 
-        <div className="service">
-          <div className="value"><p>900</p><img src={dram} width="11.82px" height="13px" className="dram" /><p>/ консультация</p></div>
+        <div className="docPageService">
+          <div className="docPagevalue"><p>900</p><span style={{marginTop:'12px'}}><img src={dram} width="11.82px" height="8px" className="dram" /></span><p>/ консультация</p></div>
           <div><p>30 минут</p></div>
         </div>
       </div>
