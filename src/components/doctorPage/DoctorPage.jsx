@@ -5,13 +5,16 @@ import calendar from "../../images/Group.png";
 import hat from "../../images/hat.png";
 import plus from "../../images/plus.png";
 import znak from "../../images/znak.png";
-import { useParams, useSearchParams } from "react-router-dom";
+import registrations from "../../local/registration.json"
+import { useSearchParams } from 'react-router-dom';
+
 
 const DoctorPage = () => {
-
+  let {userId} = useSearchParams();
+  console.log(userId)
   return (
     <div className="doctorPage">
-
+    
       <div className="doctorPageNavbar">
         <div><span className="navbartext">Врачи</span></div>
         <div><img src={vector} width="6px" height="10px" className="docVector" /> </div>

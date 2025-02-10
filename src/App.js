@@ -10,11 +10,10 @@ import DoctorPage from './components/doctorPage/DoctorPage';
 import'./components/doctorPage/doctorPage.css';
 import LangProvider ,{LangContext} from './contexts/LangContext';
 import { Route, Routes, useParams, useSearchParams } from 'react-router-dom';
+import * as React from 'react';
 
 
 function App() {
-  let [searchParams, setSearchParams] = useSearchParams();
-  
   return (<>
   <div className="App">
     <LangProvider value = {"ru"}>

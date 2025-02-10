@@ -214,6 +214,12 @@
     top: 1438px;
     left: 386px;
 }
+#myNotes1:hover,
+#myNotes2:hover,
+#myNotes3:hover{
+    color: #56CCF2;
+    border-bottom-color: #56CC,
+}
 
 #myNotes1,
 #myNotes2,

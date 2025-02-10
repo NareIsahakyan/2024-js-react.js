@@ -2,11 +2,12 @@ import doctorAvatar from "../../images/doctor.png";
 import calendars from "../../images/calendar.png";
 import clocks from "../../images/clk.png";
 import videCamera from "../../images/video-camera.png";
-import { Link } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { useSearchParams } from 'react-router-dom';
+import * as React from 'react';
 
 const RegistrationList =(registration,key)=>{
-    
+   
     const  clockDate=registration.clock,
     doctorAvatarSrs=registration.doctorAvatar,
     calendarDate = registration.calendar,
