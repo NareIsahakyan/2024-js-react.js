@@ -1,11 +1,15 @@
-import { children, createContext } from "react";
+import { children, createContext, useState } from "react";
+import { useContext } from "react";
 
 export const LangContext = createContext();
 
-const LangProvider = ({children , value}) => {
-
+const LangProvider = ({children}) => {
+const [lang, setLang] = useState("ru");
+function newLng(lng){
+    setLang(lng)
+}
     return(
-        <LangContext.Provider value = {value}>
+        <LangContext.Provider value = {{lang,newLng}}>
             {children}
             </LangContext.Provider>
     )

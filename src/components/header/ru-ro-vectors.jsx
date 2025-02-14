@@ -1,8 +1,10 @@
-import { startTransition, useState } from "react";
+import { startTransition, useContext, useState } from "react";
+import { LangContext } from "../../contexts/LangContext";
+import { tr } from "../../utils/translate";
 
 const Ru_ro_vectors = () => {
     const [isButtonDisabled, setButtonDisabled] = useState(false);
-
+    const {lang, newLng} = useContext(LangContext);
     const disableButton = () => {
         setButtonDisabled(true);
     };
@@ -15,7 +17,11 @@ const Ru_ro_vectors = () => {
     return (
         <div className="vector">
             <button
-                onClick={enableButton}
+                onClick={() => {
+                    enableButton()
+                    newLng("ru")  
+                }
+                }
                 style={!isButtonDisabled ?
                     styles.disabledButton : styles.enabledButton}
                 disabled={!isButtonDisabled}
@@ -23,7 +29,10 @@ const Ru_ro_vectors = () => {
                 RU
             </button>
             <button
-                onClick={disableButton}
+                onClick={() => {
+                    disableButton()
+                    newLng("en")
+                }}
                 style={isButtonDisabled ?
                     styles.disabledButton : styles.enabledButton}
                 disabled={isButtonDisabled}
@@ -45,7 +54,7 @@ const styles = {
         borderBottomRightRadius: "40%",
         color: "#FFFFFF",
         backgroundColor: "rgb(86, 204, 242)",
-        paddingBottom:"2%",
+        paddingBottom: "2%",
         border: "none",
     },
     enabledButton: {
@@ -58,6 +67,6 @@ const styles = {
         border: "none",
         color: "#4F4F4F",
         backgroundColor: "#FFFFFF",
-        paddingBottom:"2%",
+        paddingBottom: "2%",
     },
 };

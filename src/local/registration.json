@@ -6,7 +6,8 @@
         "doctorAvatar": "",
         "fulName": "Ольга Никитина",
         "specialization": "Оториноларинголог (ЛОР), Терапевт",
-        "experience": "Стаж 15 лет"
+        "experience": "Стаж 15 лет",
+        "isCompleted":"false"
     },
     {
         "registrId": "2",

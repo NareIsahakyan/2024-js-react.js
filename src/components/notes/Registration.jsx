@@ -1,91 +1,25 @@
-import RegistrationList from "./Registrationlist";
-import registrations from "../../local/registration.json"
-import { useCallback, useMemo, useState } from "react";
-import { BrowserRouter, Outlet, Route, Routes, useParams } from "react-router-dom";
-import { useSearchParams } from 'react-router-dom';
+
+import { useParams } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
+import { tr } from "../../utils/translate";
+import { LangContext } from "../../contexts/LangContext";
+import { useContext } from "react";
 
 const Registration = () => {
-  const now = new Date();
-  const [registrationData, setRegistration] = useState(registrations);
-  const [lastIsClicked, setLastIsClicked] = useState(false);
-  const [futureIsClicked, setfutureIsClicked] = useState(true);
-  let {userId} =useParams();
-
-  const registrationFuture = registrationData.filter((registrsData) => {
-    return registrsData.clock > now;
-  }).map((registrData) => {
-    return <RegistrationList
-      clock={registrData.clock}
-      doctorAvatar={registrData.doctorAvatar}
-      calendar={registrData.calendar}
-      fulName={registrData.fulName}
-      specialization={registrData.specialization}
-      experience={registrData.experience}
-      key={registrData.registrId} />
-  });
-
-  const registrationLast = registrationData.filter((registrsData) => {
-    return registrsData.clock < now;
-  }).map((registrData) => {
-    return <RegistrationList
-      clock={registrData.clock}
-      doctorAvatar={registrData.doctorAvatar}
-      calendar={registrData.calendar}
-      fulName={registrData.fulName}
-      specialization={registrData.specialization}
-      experience={registrData.experience}
-      key={registrData.registrId} />
-  });
-
-  const registration = registrationData.map((registrData) => {
-    return <RegistrationList
-      clock={registrData.clock}
-      doctorAvatar={registrData.doctorAvatar}
-      calendar={registrData.calendar}
-      fulName={registrData.fulName}
-      specialization={registrData.specialization}
-      experience={registrData.experience}
-      key={registrData.registrId} />
-  })
-
-
-  const futurHandel = useCallback(() => {
-    setfutureIsClicked(true);
-    setLastIsClicked(false);
-    setRegistration(registrationFuture);
-   
-  });
-
-
-  const lastHandel = useCallback(() => {
-    setfutureIsClicked(false);
-    setLastIsClicked(true);
-    setRegistration(registrationLast);
-    
-  });
-  const offHandel = useCallback(() => {
-    setRegistration(registration)
-  });
+  const {sortBy} = useParams();
+  const { lang } = useContext(LangContext);
 
   return (
     <>
-   
       <div className="buttonslist">
-        <button type="button" value="Предстоящие" id="myNotes1" onClick={futurHandel}>Предстоящие</button>
-        <button type="button" value="Прошедшие" id="myNotes2" onClick={lastHandel}>Прошедшие</button>
-        <button type="button" value="Отмененные" id="myNotes3" onClick={offHandel}>Отмененные</button>
+        <Link to="future" id="myNotes1" style={{ color:sortBy === "future" ? "blue" : "grey" }}>{tr("upcoming", lang)}</Link>
+        <Link to="last" id="myNotes2" style={{ color:sortBy === "last" ? "blue" : "grey" }}>{tr("past", lang)}</Link>
+        <Link to="off" id="myNotes3" style={{ color:sortBy === "off" ? "blue" : "grey" }}>{tr("canceled", lang)}</Link>
       </div>
       <div className="nodesList">
-        
-          <Routes>
-          <Route path='/future' element={registrationFuture} />
-          <Route path='/last' element={registrationLast} />
-          </Routes>
-        <Outlet/>
+        <Outlet />
       </div>
-      
     </>
-
   )
 }
 export default Registration;

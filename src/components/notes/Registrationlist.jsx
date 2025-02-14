@@ -2,27 +2,33 @@ import doctorAvatar from "../../images/doctor.png";
 import calendars from "../../images/calendar.png";
 import clocks from "../../images/clk.png";
 import videCamera from "../../images/video-camera.png";
-import { Outlet, Link } from "react-router-dom";
-import { useSearchParams } from 'react-router-dom';
+import { Link, useParams } from "react-router-dom";
 import * as React from 'react';
+import { tr } from "../../utils/translate";
+import { LangContext } from "../../contexts/LangContext";
+import { useContext } from "react";
 
-const RegistrationList =(registration,key)=>{
-   
+
+const RegistrationList =(registration)=>{
+    const { lang } = useContext(LangContext);
+    
     const  clockDate=registration.clock,
     doctorAvatarSrs=registration.doctorAvatar,
     calendarDate = registration.calendar,
     fulName= registration.fulName,
     specialization=registration.specialization,
-    experience = registration.experience;
-
+    experience = registration.experience,
+    id = registration.id;
+    listId =id;
+ 
     return(
-        <Link to ='/doctorPage/:userId'>
+        <Link to = {`/doctorPage?userId=${id}`}>
         <div className="inNodeList" >
                     <div className="notesDataToRezerv">
-                        <div className="notesData" key={key}>
+                        <div className="notesData" key={id}>
                             <div><img src={calendars} width="16px" height="16px" className="calendar" />{calendarDate}</div>
                             <div><img src={clocks} width="16px" height="16px" className="calendar" />{clockDate}</div>
-                            <div><img src={videCamera} width="16px" height="16px" className="videCamera" /> Видео связь </div>
+                            <div><img src={videCamera} width="16px" height="16px" className="videCamera" />{tr("videoCommunication", lang)}</div>
                         </div>
                         <div><input type="button" value="Запланировано" id="myNotesrezerv"></input></div>
                     </div>
@@ -47,4 +53,5 @@ const RegistrationList =(registration,key)=>{
                 </Link>
     )
 }
+
 export default RegistrationList;
