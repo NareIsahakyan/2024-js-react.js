@@ -1,134 +1,136 @@
 .header {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     height: 109px;
     width: 100%;
     background-color: #FFFFFF;
+    position: fixed;
+    z-index: 100;
 }
+
 .header1 {
     display: flex;
-    flex-direction:row;
-    width:100%;
+    flex-direction: row;
     background-color: #FFFFFF;
     padding-bottom: 1%;
-    box-shadow:0px 15px 15px hsl(0, 1%, 74%);
+    box-shadow: 0px 15px 15px hsl(0, 1%, 74%);
 
 }
-.aloDocimg{
+
+.aloDocimg {
     width: 171px;
     height: 45px;
-    margin-top:3px;
-    margin-left:380px;
-}
-.vector{
-    display: flex;
-    flex-direction: row;
-   align-items: center;
-    height: 29px;
-    margin-left: 1500px;
-    margin-top: 5px;
-    gap: 15px;
+    margin-top: 3px;
+    margin-left: 20%;
 }
 
-.navbar{
+.vector {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 29px;
+    margin-right: 16%;
+    margin-top: 0.5%;
+    gap: 1%;
+}
+
+.navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 390px;
     height: 15px;
-    position: absolute;
-    top:52px;
-   left: 844px;
-    gap:39.5px;
+    margin-top: 1%;
+    margin-left: 12%;
+    gap: 1%;
 }
-.navigation1{
-    font-family:"Montserrat";
+
+.navigation1 {
+    font-family: "Montserrat";
     font-size: 12px;
     height: 14.63px;
     text-align: center;
     color: #A0A0A0;
 }
-.navigations{
+
+.navigations {
     display: block;
 }
-.navigationsCount{
+
+.navigationsCount {
     width: 18.28px;
     height: 18.28px;
-    background-color:#FF9F28 ;
+    background-color: #FF9F28;
     color: #FFFFFF;
     border-radius: 50%;
     text-align: center;
     font-size: 12px;
-    position: absolute;
-    top: 36px;
-    left:1266px;
+    margin-left: 65px;
 }
-.bell{
-    position: absolute;
-    top:45px;
-    left:1272px;
+
+.bell {
+    margin-top: -6%;
+    margin-left: 75px;
 }
-.avatar{
-    font:"Montserrat";
+
+.avatar {
+    font: "Montserrat";
     font-size: 24px;
     width: 37px;
     height: 37px;
-    position: absolute;
-    top: 40px;
-    left: 1333px;
+    margin-left: 3%;
     color: #FFFFFF;
-    background-color:#FF9F28 ;
+    background-color: #FF9F28;
     border-radius: 50%;
     text-align: center;
 }
-.acountName{
+
+.acountName {
     width: 125px;
     height: 17px;
-    font:"Montserrat";
+    font: "Montserrat";
     font-size: 14px;
-    position: absolute;
-    top:48px;
-    left: 1380px;
+    margin-top: 2ex;
+    margin-left: 1.5%;
     color: #787878;
     font-style: bold;
 }
-.vectorToUnder{
+
+.vectorToUnder {
     width: 6px;
     height: 11px;
-    position: absolute;
-    top: 45px;
-    left: 1515px;
-    color:#787878 ;
+    margin-top: 1.5ex;
+    margin-left: 1%;
+    color: #787878;
 
 }
-.vectorToUnder button{
+
+.vectorToUnder button {
     border: none;
     background-color: rgba(255, 255, 255, 1);
 }
-.selectBar{
+
+.selectBar {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    position: absolute;
-    top: 60px;
-    left: 50%;
     gap: 2px;
     text-align: start;
     width: 219px;
     height: 154px;
     border-radius: 5px;
-    margin:5px;
+    margin: 5px;
     background-color: rgba(255, 255, 255, 1);
     color: rgba(120, 120, 120, 1);
-    box-shadow: 0px 20px  15px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.1);
 }
 
-.selectBar hr{
-    color:rgba(201, 201, 201, 1);
+.selectBar hr {
+    color: rgba(201, 201, 201, 1);
     width: 219px;
 }
 
-.selectBar div{
+.selectBar div {
     display: flex;
     flex-direction: row;
     width: 150px;

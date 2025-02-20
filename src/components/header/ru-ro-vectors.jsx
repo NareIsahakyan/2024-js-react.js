@@ -1,10 +1,11 @@
 import { startTransition, useContext, useState } from "react";
 import { LangContext } from "../../contexts/LangContext";
 import { tr } from "../../utils/translate";
+import i18n from 'i18next';
 
 const Ru_ro_vectors = () => {
     const [isButtonDisabled, setButtonDisabled] = useState(false);
-    const {lang, newLng} = useContext(LangContext);
+    // const {lang, newLng} = useContext(LangContext);
     const disableButton = () => {
         setButtonDisabled(true);
     };
@@ -18,8 +19,9 @@ const Ru_ro_vectors = () => {
         <div className="vector">
             <button
                 onClick={() => {
-                    enableButton()
-                    newLng("ru")  
+                    enableButton();
+                    i18n.changeLanguage("ru")
+                    // newLng("ru")  
                 }
                 }
                 style={!isButtonDisabled ?
@@ -30,8 +32,9 @@ const Ru_ro_vectors = () => {
             </button>
             <button
                 onClick={() => {
-                    disableButton()
-                    newLng("en")
+                    disableButton();
+                    i18n.changeLanguage("en")
+                    // newLng("en")
                 }}
                 style={isButtonDisabled ?
                     styles.disabledButton : styles.enabledButton}

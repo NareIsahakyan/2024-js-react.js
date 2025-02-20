@@ -1,37 +1,42 @@
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 434px;
-    gap: 3%;
     background-color: #4F4F4F;
+    gap: 15px;
 }
-.footer1part{
-display: flex;
-flex-direction: column;
-padding-left: 380px;
+
+.footer1part {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20%;
 }
-.logo{
+
+.logo {
     width: 203px;
     height: 53px;
     padding-top: 64px;
 }
-.aboutSite{
-  width: 364px;
-  height: 90px;
-  text-align: start;  
-  padding-top: 51px;
-  color:#AFAFAF ;
-  font-family: "Montserrat";
-  font-size: 12px;
-  line-height: 14.63px;
+
+.aboutSite {
+    width: 364px;
+    height: 90px;
+    text-align: start;
+    padding-top: 51px;
+    color: #AFAFAF;
+    font-family: "Montserrat";
+    font-size: 12px;
+    line-height: 14.63px;
 }
-.sites{
+
+.sites {
     display: flex;
     flex-direction: row;
     padding-top: 20px;
-    gap:35px;
+    gap: 35px;
 }
+
 /* .instagram{
    
 }
@@ -41,12 +46,13 @@ padding-left: 380px;
 .youtube{
   
 } */
-.appBadge{
+.appBadge {
     display: flex;
     flex-direction: row;
     padding-top: 40px;
     gap: 20px;
 }
+
 /* .appStore{
    
 }
@@ -54,51 +60,57 @@ padding-left: 380px;
   
 } */
 
-.footer2part{
+.footer2part {
     display: flex;
     flex-direction: column;
     padding-top: 71px;
-    gap:37px;
+    gap: 37px;
     color: #FFFFFF;
     text-align: start;
 }
-.user .faq .forDoc .forServise .contact .usersOK{
-   height: 17px; 
-   font-family: "Montserrat";
-   font-size: 14px;
-   line-height: 17.07px;
-   color: #FFFFFF;
+
+.user .faq .forDoc .forServise .contact .usersOK {
+    height: 17px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    line-height: 17.07px;
+    color: #FFFFFF;
 }
 
-.footer3part{
+.footer3part {
     display: flex;
     flex-direction: column;
     padding-top: 75px;
     gap: 25px;
 }
-.contactText{
+
+.contactText {
     font-family: "Montserrat";
-   font-size: 12px;
-   line-height: 14.63px;
-   color: #FFFFFF;
+    font-size: 12px;
+    line-height: 14.63px;
+    color: #FFFFFF;
 }
-.email{
+
+.email {
     display: flex;
     flex-direction: row;
-   gap:22px
+    gap: 22px;
 }
-.plase{
+
+.plase {
     display: flex;
     flex-direction: row;
-   gap:22px;
+    gap: 22px;
 }
-.clock{
+
+.clock {
     display: flex;
     flex-direction: row;
-   gap:22px;
+    gap: 22px;
 }
-.phone{
+
+.phone {
     display: flex;
     flex-direction: row;
-   gap:22px;
+    gap: 22px;
 }

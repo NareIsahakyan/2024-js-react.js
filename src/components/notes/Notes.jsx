@@ -10,27 +10,29 @@ import Registration from "./Registration";
 import { tr } from "../../utils/translate";
 import { LangContext } from "../../contexts/LangContext";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 const Notes = () => {
-    const { lang } = useContext(LangContext);
+    // const { lang } = useContext(LangContext);
+    const { t } = useTranslation();
     return (
         <div className="notes">
 
             <div className="aboutConsultations">
                 <div className="about">
                     <div className="aboutHeader">
-                        <span><b>{tr("onlineConsultationsFrom", lang)}</b></span>
-                        <span><b>{tr("SpecialistDoctors", lang)}</b></span>
+                        <span><b>{t("onlineConsultationsFrom")}</b></span>
+                        <span><b>{t("SpecialistDoctors")}</b></span>
                     </div>
-                    {/* <div className="orangeStyle"><img src={underline1} width="224px" height="19px" /></div> */}
-                    <div><span className="aboutText">{tr("consult", lang)} <span><b>{tr("Now", lang)}</b></span>{tr("OrBy", lang)}<b>{tr("Appointment", lang)}</b><br />
-                        {tr("From...", lang)}<br />
-                        {tr("availableIn", lang)}<span className="aquaStyle"><b>App Store </b></span>{tr("And..", lang)}<span className="aquaStyle"><b>Google Play </b></span></span></div>
-                    {/* <div className="orangeStyle1"><img src={underline2} width="66px" height="9px" /></div>
-                    <div className="orangeStyle2"><img src={underline3} width="243px" height="9px" /></div> */}
+                    <div className="orangeStyle"><img src={underline1} width="224px" height="19px" /></div>
+                    <div><span className="aboutText">{t("consult")} <span><b>{t("Now")}</b></span>{t("OrBy")}<b>{t("Appointment")}</b><br />
+                        {t("From...")}<br />
+                        {t("availableIn")}<span className="aquaStyle"><b>App Store </b></span>{t("And..")}<span className="aquaStyle"><b>Google Play </b></span></span></div>
+                    <div className="orangeStyle1"><img src={underline2} width="66px" height="9px" /></div>
+                    <div className="orangeStyle2"><img src={underline3} width="243px" height="9px" /></div>
                     <div className="notesButtons">
-                        <div><input type="button" value={tr("signUp", lang)} id="noteButton"></input></div>
-                        <div><input type="button" value={tr("howDoesThisWork", lang)} id="howItWork"></input></div>
+                        <div><input type="button" value={t("signUp")} id="noteButton"></input></div>
+                        <div><input type="button" value={t("howDoesThisWork")} id="howItWork"></input></div>
                     </div>
                 </div>
 
@@ -45,15 +47,15 @@ const Notes = () => {
             <div className="toNotes">
                 <img src={objectProfile} width="185.12px" height="315.73px" className="profile5" />
                 <div className="ToNotesText">
-                    <div><h1 className="toNotesHead">{tr("makeAnAppointmentWithADoctor", lang)}</h1></div>
-                    <div><span className="toNodestextPart">{tr("moreDoctorsAndMoreDifferentSpecializations", lang)}</span></div>
-                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{tr("appointmentAtATime...", lang)}</span></div>
-                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{tr("doctorsWithExperience...", lang)}</span></div>
-                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{tr("weWillClearlyExplain...", lang)}</span></div>
-                    <div><input type="button" value={tr("signUp", lang)} id="tonoteButton"></input></div>
+                    <div><h1 className="toNotesHead">{t("makeAnAppointmentWithADoctor")}</h1></div>
+                    <div><span className="toNodestextPart">{t("moreDoctorsAndMoreDifferentSpecializations")}</span></div>
+                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{t("appointmentAtATime...")}</span></div>
+                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{t("doctorsWithExperience...")}</span></div>
+                    <div className="line"><div className="orangeBoll"></div><span className="toNodestextPart">{t("weWillClearlyExplain...")}</span></div>
+                    <div><input type="button" value={t("signUp")} id="tonoteButton"></input></div>
                 </div>
             </div>
-            <div><input type="button" value={tr("myEntries", lang)} id="myNotes"></input></div>
+            <div><input type="button" value={t("myEntries")} id="myNotes"></input></div>
             <Registration />
         </div>
     )

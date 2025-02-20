@@ -7,10 +7,12 @@ import * as React from 'react';
 import { tr } from "../../utils/translate";
 import { LangContext } from "../../contexts/LangContext";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 
 const RegistrationList =(registration)=>{
-    const { lang } = useContext(LangContext);
+    // const { lang } = useContext(LangContext);
+     const { t } = useTranslation();
     
     const  clockDate=registration.clock,
     doctorAvatarSrs=registration.doctorAvatar,
@@ -19,16 +21,16 @@ const RegistrationList =(registration)=>{
     specialization=registration.specialization,
     experience = registration.experience,
     id = registration.id;
-    listId =id;
- 
+   
     return(
         <Link to = {`/doctorPage?userId=${id}`}>
+        
         <div className="inNodeList" >
                     <div className="notesDataToRezerv">
                         <div className="notesData" key={id}>
                             <div><img src={calendars} width="16px" height="16px" className="calendar" />{calendarDate}</div>
                             <div><img src={clocks} width="16px" height="16px" className="calendar" />{clockDate}</div>
-                            <div><img src={videCamera} width="16px" height="16px" className="videCamera" />{tr("videoCommunication", lang)}</div>
+                            <div><img src={videCamera} width="16px" height="16px" className="videCamera" />{t("videoCommunication")}</div>
                         </div>
                         <div><input type="button" value="Запланировано" id="myNotesrezerv"></input></div>
                     </div>

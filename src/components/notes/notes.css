@@ -11,13 +11,13 @@
     flex-direction: row;
     width: 100%;
     background-color: #FFFFFF;
+    gap: 5%;
 }
 
 .about {
     text-align: start;
-    position: absolute;
-    top: 297px;
-    left: 380px;
+    margin-top: 297px;
+    margin-left: 20%;
 }
 
 .aboutHeader {
@@ -93,32 +93,28 @@
 }
 
 .nodesProfile {
-    position: absolute;
-    width: 698px;
+    position: relative;
+    top: 150px; 
 }
 
 .profile1 {
     position: absolute;
-    top: 155px;
-    left: 1020px;
 }
 
 .profile2 {
     position: absolute;
-    top: 301px;
-    left: 1060px;
+    top: 140px;
+    left:  39px;
 }
 
 .profile3 {
     position: absolute;
-    top: 361.4px;
-    left: 1050.01px;
+    top: 140px;
 }
 
 .profile4 {
     position: absolute;
-    top: 371.4px;
-    left: 1070.60px;
+    top: 140px;
 }
 
 .toNotes {
@@ -126,8 +122,8 @@
     flex-direction: row;
     width: 1158px;
     height: 304px;
-    margin-top: 855px;
-    margin-left: 382px;
+    margin-top: 275px;
+    margin-left: 20%;
     border-radius: 10px;
     border: 1px solid hsl(0, 1%, 77%);
     box-shadow: 10px 10px 10px hsl(0, 1%, 77%);
@@ -136,9 +132,8 @@
 }
 
 .profile5 {
-    position: absolute;
-    top: 1003.67px;
-    left: 485.62px;
+    margin-top: 5ex;
+    margin-left: 5ex;
 }
 
 .toNotesHead {
@@ -151,17 +146,13 @@
 }
 
 .ToNotesText {
-    position: absolute;
-    top: 962px;
-    left: 667px;
+    margin-left: 15ex;
+    margin-top: 3ex;
 }
 
 .line {
     display: flex;
     flex-direction: row;
-    position: static;
-    top: 1058px;
-    left: 668px;
     gap: 15px;
     margin-top: 18px;
 }
@@ -198,9 +189,7 @@
     text-align: center;
     background-color: #56CCF2;
     border-radius: 5px;
-    position: absolute;
-    top: 1351px;
-    left: 890px;
+    margin-top: 5em;
     text-align: center;
     border: 1px solid #56CCF2;
 }
@@ -208,15 +197,16 @@
 .buttonslist {
     display: flex;
     flex-direction: row;
+    justify-content: start;
     gap: 50px;
     align-items: start;
-    position: absolute;
-    top: 1438px;
-    left: 386px;
+    margin-top: 5em;
+    margin-left: 20%;
 }
+
 #myNotes1:hover,
 #myNotes2:hover,
-#myNotes3:hover{
+#myNotes3:hover {
     color: #56CCF2;
     border-bottom-color: #56CC,
 }
@@ -240,15 +230,14 @@
     flex-direction: column;
     width: 1190px;
     height: 615px;
-    position: absolute;
-    top: 1480px;
-    left: 380px;
-    gap: 15px;
+    margin-top: 5ex;
+    margin-left: 20%; 
     overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-.inNodeList{
+
+.inNodeList {
     width: 1160px;
     height: 193px;
     border: 0.5px solid #D1D1D1;

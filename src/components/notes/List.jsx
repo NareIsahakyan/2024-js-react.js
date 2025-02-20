@@ -27,7 +27,6 @@ return(
               key={registrData.registrId} 
               id = {registrData.registrId}/>
           })
-         
     } 
 </div>
 )

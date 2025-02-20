@@ -12,6 +12,7 @@ import LangProvider  from './contexts/LangContext';
 import { Route, Routes} from 'react-router-dom';
 import * as React from 'react';
 import List from './components/notes/List';
+import './i18n';
 
 
 function App() {

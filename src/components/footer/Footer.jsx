@@ -11,20 +11,22 @@ import phone from "../../images/phone-call.png";
 import { tr } from "../../utils/translate";
 import { LangContext } from "../../contexts/LangContext";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
 
 
 const Footer = () => {
-    const { lang } = useContext(LangContext);
+    // const { lang } = useContext(LangContext);
+     const { t } = useTranslation();
     return (
  <div className="footer">
 
 <div className="footer1part">
 <div className="logo"><img src={aloDocLogo}  alt="aloDoc" width="203px" height="53px"/> </div>
-<div className="aboutSite"><span>{tr("onlineConsultationsOf..", lang)}<br/>
-{tr("onlineConsultationsOf/1..", lang)}<br/><br/>
-{tr("onlineConsultationsOf/2..", lang)} <br/>
-{tr("onlineConsultationsOf/3..", lang)}<br/>
-{tr("onlineConsultationsOf/4..", lang)}</span></div>
+<div className="aboutSite"><span>{t("onlineConsultationsOf..")}<br/>
+{t("onlineConsultationsOf/1..")}<br/><br/>
+{t("onlineConsultationsOf/2..")} <br/>
+{t("onlineConsultationsOf/3..")}<br/>
+{t("onlineConsultationsOf/4..")}</span></div>
 
 <div className="sites">
 <div className="instagram"><img src={instagramLogo} width="24px" height="24px"/></div>
@@ -39,12 +41,12 @@ const Footer = () => {
 </div>
 
 <div className= "footer2part">
-<div> <span  className="user">{tr("howToUse", lang)}</span><br/> </div>
-<div><span  className="faq">{tr("FAQ(..)", lang)}</span></div>
-<div><span  className="forDoc">{tr("forDoctors", lang)}</span></div>
-<div><span  className="forServise">{tr("aboutTheService", lang)}</span></div>
-<div><span  className="contact">{tr("contacts", lang)}</span></div>
-<div><span  className="usersOK">{tr("UserAgreement", lang)}</span></div>
+<div> <span  className="user">{t("howToUse")}</span><br/> </div>
+<div><span  className="faq">{t("FAQ(..)")}</span></div>
+<div><span  className="forDoc">{t("forDoctors")}</span></div>
+<div><span  className="forServise">{t("aboutTheService")}</span></div>
+<div><span  className="contact">{t("contacts")}</span></div>
+<div><span  className="usersOK">{t("UserAgreement")}</span></div>
 </div>
 
 <div className="footer3part">
