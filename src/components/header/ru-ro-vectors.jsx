@@ -20,7 +20,7 @@ const Ru_ro_vectors = () => {
             <button
                 onClick={() => {
                     enableButton();
-                    i18n.changeLanguage("ru")
+                    i18n.changeLanguage("ru");
                     // newLng("ru")  
                 }
                 }
@@ -33,7 +33,7 @@ const Ru_ro_vectors = () => {
             <button
                 onClick={() => {
                     disableButton();
-                    i18n.changeLanguage("en")
+                    i18n.changeLanguage("en");
                     // newLng("en")
                 }}
                 style={isButtonDisabled ?

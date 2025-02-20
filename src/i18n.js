@@ -6,7 +6,7 @@ import ru from "./local/ru.json";
 
 i18n
 .use(initReactI18next)
-.use(LanguageDetector)
+// .use(LanguageDetector)
 .init({
     debug:true,
     fallbackLng:'ru',
