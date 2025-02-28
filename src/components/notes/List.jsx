@@ -9,7 +9,7 @@ const List=()=>{
         return registrations.filter((registrData)=>{
         if(params.sortBy === "future") return registrData.clock > "14:20";
         if(params.sortBy === "last") return registrData.clock < "14:20";
-       
+       if(params.sortBy === 'off') return registrData.isCompleted==false;
 });
 },[params]);
 

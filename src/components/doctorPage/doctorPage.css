@@ -1,4 +1,4 @@
-.doctorPage{
+.doctorPage {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -6,44 +6,44 @@
     background-color: #FFFFFF;
 }
 
-.doctorPageNavbar{
+.doctorPageNavbar {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     text-align: start;
     margin-top: 120px;
     height: 50px;
     background-color: rgba(86, 204, 242, 1);
-    padding-left:380px;
     padding-top: 20px;
     gap: 5px;
-} 
+    padding-left: 20%;
+}
 
-.doctorPagelist{
-
+.doctorPagelist {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 320px;
     background-color: rgba(86, 204, 242, 1);
-   
 }
-.navbartext{
+
+.navbartext {
     font-family: "Montserrat";
     font-size: 12px;
     line-height: 14.63px;
     margin-right: 10px;
     color: rgba(255, 255, 255, 1);
 }
-.aboutDoctorPage{
+
+.aboutDoctorPage {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: start;
-    gap: 15px; 
-    padding-top: 30px; 
+    gap: 15px;
+    padding-top: 30px;
 }
 
-.abouts{
+.abouts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -52,57 +52,64 @@
     font-family: "Montserrat";
     font-size: 18px;
     line-height: 21.94px;
-    gap:15px;
+    gap: 15px;
 }
 
-.abouts h1{
+.abouts h1 {
     font-family: "Montserrat";
     font-size: 24px;
     line-height: 29.26px;
-    color: rgba(255, 255, 255, 1); 
-}
-.abouts p{
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 21.94px;
-    color: rgba(255, 255, 255, 1); 
-}
-.abouts h3{
-    font-family: "Montserrat";
-    font-size: 18px;
-    line-height: 21.94px;
-    color: rgba(255, 255, 255, 1); 
+    color: rgba(255, 255, 255, 1);
 }
 
-.doctorAvatar{
+.abouts p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.abouts h3 {
+    font-family: "Montserrat";
+    font-size: 18px;
+    line-height: 21.94px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.doctorAvatar {
     width: 144.71px;
     height: 144.71px;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
-.dram{
+
+.dram {
     width: 11.82px;
     height: 13px;
     border-radius: 50%;
     margin: 10px;
 }
-.docPageService{
+
+.docPageService {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    gap:5px ;
+    gap: 5px;
 }
-.docPageService p{
-color: rgba(255, 255, 255, 1);
-font-size: 18px;
-font-family: "Montserrat";
+
+.docPageService p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: "Montserrat";
 }
-.docPagevalue{
+
+.docPagevalue {
     display: flex;
     flex-direction: row;
 
 }
-.docVector{
+
+.docVector {
     width: 6px;
     height: 10px;
     margin: 5px;
@@ -110,24 +117,27 @@ font-family: "Montserrat";
 
 
 
-.auasyle{
+.auasyle {
     color: rgba(86, 204, 242, 1);
     font-family: "Montserrat";
     font-size: 18px;
     line-height: 21.94px;
     margin-left: 30px;
 }
-.iconslist{
+
+.iconslist {
     display: flex;
     flex-direction: row;
     text-align: start;
     margin-top: 30px;
 }
-.main{
-    margin-left: 380px;
-   margin-top: 50px;
+
+.main {
+    margin-top: 5%;
+    margin-left: 20%;
 }
-.main p{
+
+.main p {
     text-align: start;
     color: rgba(79, 79, 79, 1);
     font-family: "Montserrat";

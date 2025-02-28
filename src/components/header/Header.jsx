@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Navigations from "./Navigations";
 import Ru_ro_vectors from "./ru-ro-vectors";
 
-
 const Header = () => {
 const count = 3;
     return (
