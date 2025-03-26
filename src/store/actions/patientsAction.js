@@ -4,10 +4,9 @@ export function gettingMe(first_name, last_name, age) {
     return {
         type: patientsTypes.GET_ME,
         patient: {
-            id:Math.random(),
             first_name,
             last_name,
-            age
+            age:age
         }
     }
 }

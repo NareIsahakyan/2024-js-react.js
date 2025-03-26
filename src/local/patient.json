@@ -1,0 +1,12 @@
+[
+    {
+      "id":0,
+      "doctor":"Doctor",
+      "date":"date",
+      "time":"time",
+      "complaints":"complaints",
+      "research":"research",
+      "treatment":"treatment",
+      "rezults":"rezults"
+    }
+]

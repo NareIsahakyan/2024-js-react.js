@@ -2,7 +2,7 @@ import doctorAvatar from "../../images/doctor.png";
 import calendars from "../../images/calendar.png";
 import clocks from "../../images/clk.png";
 import videCamera from "../../images/video-camera.png";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import * as React from 'react';
 import { tr } from "../../utils/translate";
 import { LangContext } from "../../contexts/LangContext";

@@ -1,4 +1,4 @@
-import { useActionState, useContext } from "react";
+import { useActionState, useMemo, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -6,34 +6,39 @@ import NoteProfile from "../notes/NoteProfile";
 import Ru_ro_vectors from "../header/ru-ro-vectors";
 import aloDocLogo from "../../images/alo-doc.png";
 import Navbar from "../header/Navbar";
-import {patientsAction} from "../../store/actions";
+import { patientsAction } from "../../store/actions";
 
 
 const GetMe = () => {
     const { t } = useTranslation();
     const dispatch = useDispatch();
-    const [data, action, isProgress] = useActionState(async (data, state) => {
-        let firstName = state.get("firstName");
-        let lastName = state.get("lastName");
-        let age = state.get("age");
-        if (firstName && lastName && age) {
-            if (!firstName && !lastName && !age) {
-                return { data: {}, error: "Information about yourself not found" }
-            } else {
-                dispatch(patientsAction.gettingMe(firstName,lastName,age))
-                console.log( firstName,lastName,age)
-            }
-        }
-    }, { data: {}, error: null });
+
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [age, setAge] = useState("");
+    const content = useMemo(() => {
+            return (
+                <form >
+                    <input type="text" name="firstName" placeholder="Name" onChange={(e) => { setFirstName(e.target.value); }} /><br />
+                    <input type="text" name="LastName" placeholder="Surname" onChange={(e) => { setLastName(e.target.value); }} /><br />
+                    <input type="text" name="age" placeholder="Age" onChange={(e) => { setAge(e.target.value); }} /><br />
+                    <Link to={`/notes`}><button type="submit" onClick={clickHandler}>Next</button></Link>
+                </form>
+    )})
+    function clickHandler() {
+        dispatch(patientsAction.gettingMe(firstName, lastName, age))
+        console.log(firstName, lastName, age)
+    }
+    console.log(firstName, lastName, age)
    
     window.scrollTo(0, 0);
     return (
         <>
-        <Ru_ro_vectors/>
-        <div className="header1">
-        <img src={aloDocLogo} className="aloDocimg" alt="aloDoc" /> 
-        <Navbar/>        
-        </div>
+            <Ru_ro_vectors />
+            <div className="header1">
+                <img src={aloDocLogo} className="aloDocimg" alt="aloDoc" />
+                <Navbar />
+            </div>
             <div className="pageGetMe">
                 <div className="about">
                     <div className="aboutHeader">
@@ -48,12 +53,7 @@ const GetMe = () => {
                     </div>
                     <div className="getMe">
                         <h1 className="h1getme">Please submit information about yourself?</h1>
-                        { <form action={action}>
-                            <input type="text" name="firstName" placeholder="Name"   /><br />
-                            <input type="text" name="LastName" placeholder="Surname"  /><br />
-                            <input type="text" name="age" placeholder="Age"/><br />
-                            <Link to={`/notes`}><button type="submit" >Next</button></Link>
-                        </form>}
+                        {content}
                     </div>
                 </div>
                 <NoteProfile />

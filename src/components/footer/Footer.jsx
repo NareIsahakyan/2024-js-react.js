@@ -57,12 +57,12 @@ const Footer = () => {
 
 <div className="plase">
 <div><img src={place} width="24px" height="24px"/></div>
-<div><span className="contactText">г. Москва. ул, Ленина 54, офис 51</span></div> 
+<div><span className="contactText">{t("Moscowst..")}</span></div> 
 </div>
 
 <div className="clock">
 <div><img src={clock} width="24px" height="24px"/></div>
-<div><span className="contactText">Пн-Вс с 09:00 до 18:00</span></div> 
+<div><span className="contactText">{t("MonSunfromto")}</span></div> 
 </div>
 
 <div className="phone">

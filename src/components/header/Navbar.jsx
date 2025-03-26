@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
 
         <div className="navbar">
-            <div className="navigation1"><span />{t("howToUse")}</div>
+            <div className="navigation1">{t("howToUse")}</div>
             <div className="navigation1">{t("myEntries")}</div>
             <div className="navigation1">{t("makeAnAppointmentWithADoctor")}</div>
         </div>

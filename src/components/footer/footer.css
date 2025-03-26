@@ -5,6 +5,12 @@
     height: 434px;
     background-color: #4F4F4F;
     gap: 15px;
+
+    @media screen and (max-width:850px){
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
 }
 
 .footer1part {

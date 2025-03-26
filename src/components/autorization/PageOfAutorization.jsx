@@ -79,12 +79,11 @@ const PageOfAutorization = () => {
 
                     <div className="autorization">
                         <h1 className="loginPage">Login</h1>
-                        {isAutorization ? <button onClick={logout}>Logout</button> : <form action={action}>
+                        {isAutorization && !isvalid ? <button onClick={logout}>Logout</button> : <form action={action}>
                             <input type="email" name="email" placeholder="Email" /><br />
                             {isShow && <input type="text" name="otp" placeholder="OTP" />}
                             {data.error !== null && <p style={{ color: "red", textAlign: "center" }}>{data.error}</p>}
-                            <button type="submit">Login</button>
-                            {isvalid && <button type="submit"><Link to={`/GetMe`}>Next</Link></button>}
+                            {isvalid ? <button type="submit"><Link to={`/GetMe`}>Next</Link></button> :  <button type="submit">Login</button>}
                         </form>}
                     </div>
                 </div>

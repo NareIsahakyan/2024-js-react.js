@@ -45,6 +45,19 @@
         "specializesInTreatment": "Specializes in treatment",
         "additionally": "Additionally",
         "minutes": "minutes",
-        "consultation": "/ consultation"
+        "consultation": "/ consultation",
+        "Name":"Name",
+        "Surname":"Surname",
+        "Age":"Age",
+        "PatientsProfile":"Patients Profile",
+        "Addnewline":"Add new line",
+        "Doctor":"doctor in charge of the case",
+        "Visitingtime":"Visiting time",
+        "Patientcomplaints":"Patient complaints",
+        "Research":"Research",
+        "Prescribedtreatment":"Prescribed treatment",
+        "Treatmentresult":"Treatment result",
+        "Moscowst..":"Moscow. st., Lenina 54, office 51",
+        "MonSunfromto":"Mon-Sun from 09:00 to 18:00"
     }
 }

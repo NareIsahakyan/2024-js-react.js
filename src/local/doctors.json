@@ -1,0 +1,50 @@
+[
+    {
+        "doctorAvatar": "",
+        "fulName": "Ольга Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+       "isSelected":false
+    },
+    {
+        "fulName": "Нина Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+       "isSelected":false
+    },
+    {
+        "doctorAvatar": "",
+        "fulName": "Юлья Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+        "isSelected":false
+    }{
+        "doctorAvatar": "",
+        "fulName": "Офеля Никитина",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+        "isSelected":false
+    },
+  
+    {
+        "doctorAvatar": "",
+        "fulName": "Рафаел Юревич",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+       "isSelected":false
+    },
+    {
+        "doctorAvatar": "",
+        "fulName": "Николай Никитич",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+       "isSelected":false
+    },
+    {
+        "doctorAvatar": "",
+        "fulName": "Олег Антонов",
+        "specialization": "Оториноларинголог (ЛОР), Терапевт",
+        "experience": "Стаж 15 лет",
+       "isSelected":false
+    }
+]

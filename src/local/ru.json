@@ -46,6 +46,20 @@
         "specializesInTreatment": "Специализируется на лечении",
         "additionally": "Дополнительно",
         "minutes": "минут",
-        "consultation": "/ консультация"
+        "consultation": "/ консультация",
+        "Name":"Имя",
+        "Surname":"Фамилия",
+        "Age":"Возраст",
+        "PatientsProfile":"Профиль пациента",
+        "Addnewline":"Добавить новую строку",
+        "Doctor":"Лечащий врач",
+        "Visitingtime":"Время посещения",
+        "Patientcomplaints":"Жалобы пациентов",
+        "Research":"Исследования",
+        "Prescribedtreatment":"Назначенное лечение",
+        "Treatmentresult":"Результат лечения",
+        "Moscowst..":"г. Москва. ул, Ленина 54, офис 51",
+        "MonSunfromto":"Пн-Вс с 09:00 до 18:00"
+
     }
 }
